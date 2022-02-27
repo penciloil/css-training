@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Position</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        .text-align {
+            font-size: 2rem;
+            padding: 2rem;
+        }
+        .dashed-border {
+            border: 1px dashed silver;
+        }
+        .parent {
+            background-color: lavenderblush;
+            position: relative;
+            height: 200vh;
+        }
+        .one {
+            background-color: cyan;
+            position: absolute;
+            top: 50px;
+        }
+        .two {
+            background-color: peachpuff;
+            position: fixed;
+            bottom: 300px;
+        }
+        .three {
+            background-color: lemonchiffon;
+            position: sticky;
+            top: 0px;
+            right: -50px;
+        }
+    </style>
+</head>
+<body>
+    <div class="parent text-align dashed-border">
+        Parent
+        <div class="one text-align dashed-border">One</div>
+        <div class="two text-align dashed-border">Two</div>
+        <div class="three text-align dashed-border">Three</div>
+    </div>
+</body>
+</html>
