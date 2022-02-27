@@ -1,0 +1,15 @@
+.background {
+    background-color: lightblue;
+    border: 1px dashed silver;
+    height: 500px;
+    width: 500px;
+    margin-top: 2rem;
+    resize: both;
+    overflow: auto;
+}
+
+.text-align {
+    font-size: 1.8rem;
+    text-align: center;
+    padding: 2rem;
+}
