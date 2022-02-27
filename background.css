@@ -13,3 +13,7 @@
     text-align: center;
     padding: 2rem;
 }
+
+.dashed-border {
+    border: 1px dashed silver;
+}

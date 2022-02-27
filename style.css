@@ -1,0 +1,76 @@
+*, *::before, *::after{
+    box-sizing: border-box;
+}
+.b1, .b2, .b3 {
+    margin: 5px;
+    /* flex-grow flex-shrink flex-basis */
+    flex: 1 1 150px;
+    background-color: lightpink;
+    border: 1px solid red;
+    border-radius: 10px;
+}
+.container1 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+/* -------------------------------- */
+.container2 {
+    display: grid;
+    grid-template-columns: minmax(150px,25%) 1fr;
+}
+.sidebar {
+    background-color: palegoldenrod;
+}
+.content {
+    background-color: lightblue;
+    margin: 0;
+    height: 100%;
+}
+/* --------------------------------- */
+.container3 {
+    display: grid;
+    height: 100vh;
+    /* grid-template-rows grid-template-columns */
+    grid-template: auto 1fr auto/auto 1fr auto;
+}
+header {
+    background-color: lavenderblush;
+    grid-column: 1/4;
+    padding: 2rem;
+}
+.left-sidebar {
+    background-color: cyan;
+    grid-column: 1/2;
+}
+main {
+    background-color: peachpuff;
+    grid-column: 2/3;
+}
+.right-sidebar {
+    background-color: lemonchiffon;
+    grid-column: 3/4;
+}
+footer {
+    background-color: lightgoldenrodyellow;
+    grid-column: 1/4;
+}
+/* --------------------------------- */
+.container4 {
+    height: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 1rem;
+}
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 1rem;
+    background-color: lemonchiffon;
+}
+.photo {
+    background-color: lightblue;
+    height: 100px;
+    width: 121px;
+}
